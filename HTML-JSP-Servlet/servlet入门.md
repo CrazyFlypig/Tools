@@ -73,7 +73,7 @@ destroy() 方法只会被调用一次，在 Servlet 生命周期结束时被调�
 
 ![Servlet生命周期](D:\programmer\前端\servlet入门\Servlet生命周期.jpg)
 
-## Servlet文件上传
+## 实例：Servlet文件上传
 
 Servlet 可以与 HTML form 标签一起使用，来允许用户上传文件到服务器。上传的文件可以是文本文件或图像文件或任何文档。
 
@@ -95,7 +95,22 @@ Servlet 可以与 HTML form 标签一起使用，来允许用户上传文件到�
 *   表单**action**属性应设置为在后端服务器上处理文件上传的servlet文件。
 *   上传单个文件，应该使用单个带有属性 type="file"的\<input .../>标签。为了允许多个文件上传，请包含多个name属性值不同的input标签。输入标签具有不同的名称属性的值。浏览器会为每个input标签关联一个浏览按钮。
 
+文件上传表单代码：[upload.jsp](https://github.com/CrazyFlypig/Tools/blob/master/HTML-JSP-Servlet/web/upload.jsp)
+
 ### 编写后台 Servlet
 
+需要导入两个jar包：
 
+*   [commons-fileupload-1.3.2.jar](http://static.runoob.com/download/commons-fileupload-1.3.2.jar)
+*   [commons-io-2.5.jar](http://static.runoob.com/download/commons-io-2.5.jar)
+
+上传处理Servlet代码：[UploadServlet.java](https://github.com/CrazyFlypig/Tools/blob/master/HTML-JSP-Servlet/src/servlet/UploadServlet.java)
+
+跳转页面代码：[message.jsp](https://github.com/CrazyFlypig/Tools/blob/master/HTML-JSP-Servlet/web/message.jsp)
+
+## 实例：Servlet数据库访问
+
+下面的实例演示了如何使用 Servlet 访问 runoob 数据库。
+
+[DatabaseAccessServlet.java](https://github.com/CrazyFlypig/Tools/blob/master/HTML-JSP-Servlet/src/servlet/DatabaseAccessServlet.java)
 
