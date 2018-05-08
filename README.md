@@ -3,5 +3,3 @@
 ## Markdown语法
 ## Git使用教程
 
-## HTML、JSP、Servlet初入门
-
